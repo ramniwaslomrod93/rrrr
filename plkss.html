@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: #8be6f1;
+}
+
+.one{
+	padding:10px;
+	background-color: pink;
+}
+
+.one:hover{
+	background-color:green;
+}
+
+
+
+.myhover {
+  display: none;
+  background-color: yellow;
+  color:#97218D;
+  padding: 20px;
+}
+
+.abc:hover p {
+  display: block;
+}
+
+a:link {
+  color: red;
+}
+After Click
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link (When pressed) */
+a:active {
+  color: blue;
+}
+
+a.test{color:#EC34DD;}
+a.test:hover{color:#97218D;}
+
+li{font-size: 16px; font-family: "verdana";}
+li:first-child{font-size: 22px; color:#BE31B2;font-family: "monotype corsiva";}
+
+.mydiv{
+  float:left;
+  /*background-color: aquamarine;*/
+  color: goldenrod;
+  width: 200px;
+  margin: 20px;
+  border:2px solid #aabbcc;
+}
+
+
+
+#mydiv2{
+  clear:both;
+  content: '';
+  display: block;
+}
+
+.mydiv::after{
+  clear:both;
+  content: '';
+    display: table;
+}
+</style>
+</head>
+<body>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div>Mouse Over Me</div>
+
+<p>Test Paragraph</p>
+
+<p class="one">Test Paragraph</p>
+
+
+<div class="abc">
+Hover over me to show the p element
+  <p class="myhover">Tada! Here I am!</p>
+</div>
+
+
+<h2>CSS Links</h2>
+<p><b><a href="css_selector.html" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<p><b><a href="css_font.html" target="_blank">Another link</a></b></p>
+
+<p><b><a class="test" href="border.html" target="_blank">Another link</a></b></p>
+
+<p><b><a href="css_font2.html" target="_blank">Another link</a></b></p>
+<ul>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ul>
+
+<div>
+  <div class="mydiv">
+    test Div 1
+  </div>
+  <div id="mydiv2"></div>
+  <p>ssdfdsf</p>
+</div>
+
+<div >
+  Hi asdas
+</div>
+</body>
+</html>
+  

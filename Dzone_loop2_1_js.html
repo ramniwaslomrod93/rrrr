@@ -1,0 +1,72 @@
+DZone_loop2_1_JS.html
+<html>
+<head>
+
+<link rel="stylesheet" href="Dzone_css1.css">
+
+<script language='javascript'>
+
+
+function whileloop_fun()
+{
+    str="";
+	var i=11; 	 
+	while (i<=18)  
+	{  
+		str= str+i + "<br/>";    
+		i=i+3; //i++;  
+	}  
+    document.getElementById("msg").innerHTML=str
+}  
+
+function dowhileloop_fun()
+{
+	var i=parseInt( document.getElementById("num").value );
+    str="";
+	do
+	{  
+		str= str+i + "<br/>";  
+		i++;  
+	}while (i<=15)  ;  
+
+    document.getElementById("msg").innerHTML=str
+} 
+ 
+function forloop_fun()
+{
+    str="";
+	for (i=1; i<=5; i++)  
+	{  
+		str= str+i + "<br/>";    
+	}
+    document.getElementById("msg").innerHTML=str
+} 
+
+
+
+  
+</script>
+</head>
+<body>
+	<div class="maindiv">
+		<div class="box">
+			Number : <input type="text" id="num" value="5"> <br><br>
+			<input type="button" value="While" onclick="whileloop_fun()"/> 
+			<input type="button" value="Do-While" onclick="dowhileloop_fun()"/>  (Enter num in input <15)
+            <input type="button" value="For loop 1-5" onclick="forloop_fun()"/> 
+			
+       
+			
+	
+		</div>
+		<div class="box">
+			<span id="msg">Message</span>
+		</div>
+	
+	</div>
+
+
+
+</body>
+
+</html>

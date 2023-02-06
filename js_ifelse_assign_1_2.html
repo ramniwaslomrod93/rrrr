@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script language="javascript">
+        function validateNum(){
+            var1=document.getElementById("txt1").value;
+            if(var1=="")
+            {
+                document.getElementById("msg1").innerHTML="Please enter marks"
+                document.getElementById("txt1").focus();
+            }
+            else if(isNaN(var1))
+            {
+                document.getElementById("msg1").innerHTML="Please enter number,string not allowed"
+                document.getElementById("txt1").focus();
+            }
+            else if(var1>100)
+            {
+                document.getElementById("msg1").innerHTML="InValid Marks"
+                document.getElementById("txt1").focus();
+            }
+        }
+        function result()
+        {
+            var marks,cat;
+            marks=parseInt( document.getElementById("txt1").value)
+            cat=document.getElementById("category").value;
+            
+            if(cat=="General" && marks>75) {  
+                    document.getElementById("msg1").innerHTML= "Pass"; 
+            } 
+            else if(cat=="SC" && marks>70) {
+                    document.getElementById("msg1").innerHTML= "Pass"; 
+            }
+            else if(cat=="ST"  && marks>65) {  
+                    document.getElementById("msg1").innerHTML= "Pass"; 
+            } 
+            else{
+                    document.getElementById("msg1").innerHTML= "Fail";
+            }  
+        }  
+    </script>
+
+<link rel="stylesheet" type="text/css" href="Dzone_2_JS.css">
+</head>
+<body>
+ 
+    <div  class="box">
+        marks : <input type=text id="txt1" onblur="validateNum()"> <br><br>
+        Category : <select id="category">
+                    <option value="General">General</option>
+                    <option value="SC">SC</option>
+                    <option value="ST">ST</option>
+        </select> <br><br>
+       
+    
+        <input type="button" value="Check" onclick="result()"/> 
+
+    </div>
+
+    <div id="msg1" class="box">
+        First Div
+    </div>
+</body>
+</html>

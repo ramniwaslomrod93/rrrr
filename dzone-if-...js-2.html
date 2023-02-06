@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" href="Dzone_css1.css">
+<script language='javascript'>
+
+
+
+function nested_ifelse_fun()
+{ 
+	a=parseInt( document.getElementById("txt1").value)
+
+	if(a>=10)
+	{  
+		
+		if(a<=20)
+		{
+			document.getElementById("msg").innerHTML="B/w 10-20";  
+		}
+		else{
+			document.getElementById("msg").innerHTML="Out of 10-20";  
+		}
+	}  
+	else{  
+		document.getElementById("msg").innerHTML="Out of 10-20";  
+	}  
+}
+
+
+function logicalOp_ifelse_fun2()
+{
+
+	a= document.getElementById("txt1").value  
+	
+	if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
+	{
+		document.getElementById("msg").innerHTML="Vowel";  
+	}
+	else{  
+		document.getElementById("msg").innerHTML="Consonent";  
+	}  
+}
+
+</script>
+</head>
+<body>
+<div class="maindiv">
+	<div class="box">
+		Num1 : <input type=text id="txt1"> <br><br>
+		<input type="button" value="Range 10-20" onclick="nested_ifelse_fun()"/> 
+		
+		<input type="button" value="Vowel-Consonent" onclick="logicalOp_ifelse_fun2()"/> 
+		
+
+	</div>
+	<div class="box">
+		<span id="msg">Message</span>
+	</div>
+
+</div>
+</body>
+
+</html>

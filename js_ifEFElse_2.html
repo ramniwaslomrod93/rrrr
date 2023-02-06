@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script language="javascript">
+        function validateNum(){
+            var1=document.getElementById("txt1").value;
+            if(var1=="")
+            {
+                document.getElementById("msg1").innerHTML="Please enter a number"
+                document.getElementById("txt1").focus();
+            }
+            else if(isNaN(var1))
+            {
+                document.getElementById("msg1").innerHTML="Please enter number,string not allowed"
+                document.getElementById("txt1").focus();
+            }
+        }
+        function ifelse_fun()
+        {
+            var a,b;
+            a=parseInt( document.getElementById("txt1").value)
+
+            b=a%2;  //remainder
+            //== , > , <  , >= , <= , != , !
+            if(b==0){  
+                document.getElementById("msg1").innerHTML= a + " is even number";  
+            }  
+            else{  
+                document.getElementById("msg1").innerHTML= a + " is odd number";    
+            }
+        }  
+    </script>
+
+<link rel="stylesheet" type="text/css" href="Dzone_2_JS.css">
+</head>
+<body>
+ 
+    <div  class="box">
+        Num1 : <input type=text id="txt1" onblur="validateNum()"> <br><br>
+       
+    
+        <input type="button" value="Even-Odd" onclick="ifelse_fun()"/> 
+
+    </div>
+
+    <div id="msg1" class="box">
+        First Div
+    </div>
+</body>
+</html>
+ 

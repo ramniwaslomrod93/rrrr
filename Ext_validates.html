@@ -1,0 +1,45 @@
+Ext_validatejs.html
+<HTML>
+<HEAD>
+	<TITLE> New Document </TITLE>
+
+	<script type="text/javascript" src="ext_validate2.js" ></script>
+    
+
+</HEAD>
+<BODY >
+<form action="page2.php" onsubmit="return validate()">
+
+
+Name :	<input type=text name="user" id="user" >
+
+<span id="s1" class="nameerr">a</span> <br>
+<div class="nameerraaa">test</div>
+
+
+Age :	<input type=text name="age" id="age"> <br>
+Password :	<input type=password id="pass" name="pass"> <br>
+Address :	<textarea id="add1"></textarea> <br>
+
+Email :	<input type=text id="email"> <br>
+City : 
+<select name="city" id="city">
+	<option value="na">select city</option>
+	<option value="Jaipur">Jaipur</option>
+	<option value="Kota">Kota</option>
+	<option value="Pune">Pune</option>
+
+</select> <br>
+
+Gender:
+<input type=radio name="gender" id=gender value="Male">Male
+<input type=radio name="gender" id="gender" value="Female">Female
+<br><br>
+
+Agreed with terms and Condition:
+<input type="checkbox" name="checkbox" id="checkbox" value="check"  />
+<input type=submit value="submit">
+
+</form>
+</BODY>
+</HTML>

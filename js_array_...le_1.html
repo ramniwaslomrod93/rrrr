@@ -1,0 +1,35 @@
+Js_array_simple_1.html
+<html>
+<head>
+
+<script language='javascript'>
+
+var i; 
+
+var emp=["Ravi","Kamal","Jai"];  			//Array literal
+//console.log(emp[1]);
+document.write(emp[1] +"<br><br>")
+
+var emp2 = new Array();  					//JS Array Object
+emp2[0] = "Arun";  
+emp2[1] = "Varun";  
+emp2[2] = "John";  
+
+var emp3=new Array("Jai","Vijay","Smith");	//Array Constructor
+
+for (i=0;i<emp.length;i++){ 
+
+	document.write(emp[i] + "<br/>");  
+
+}  
+//another loop for-of syntax
+document.write("for-of");
+for (const element of emp) {
+  console.log(element);
+  document.write(element+"<br>");
+}
+</script>
+</head>
+<body>
+</body>
+</html>
